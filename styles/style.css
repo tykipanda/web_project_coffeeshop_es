@@ -13,7 +13,7 @@ body {
   max-height: 800px;
   height: 100vh;
   background-color: #ffffff;
-  background-image: url("background_header.svg");
+  background-image: url("../images/background_header.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
