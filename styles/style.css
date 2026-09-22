@@ -1,3 +1,4 @@
+
 body {
   min-width: 1100px;
   max-width: 1600px;
@@ -114,4 +115,233 @@ h1 {
   bottom: 40px;
   right: 80px;
   margin-bottom: 0px;
+}
+
+/* ===================== Main ===================== */
+.reservation {
+  background-color: #FFD6C5;
+  background-image: url("../images/background_reservation.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 100px 0 120px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reservation__title {
+  margin: 0 0 80px 0;
+  font-family:  "Inter", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+  color: #000000;
+  text-align: center;
+}
+
+.form {
+  width: 100%;
+  max-width: 385px;
+}
+
+.form__fieldset {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  border: none;
+  min-width: 0;
+}
+
+.form__label {
+  margin-bottom: 8px;
+  font-family: "Inter", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.form__input {
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 32px;
+  padding: 15px 20px;
+  border: 1px solid #838383;
+  border-radius: 4px;
+  background-color: #ffffff;
+  height: 60px;
+
+  font-family: "Inter", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.form__input::placeholder {
+  color: #838383;
+}
+
+.form__button {
+  width: 100%;
+  margin-bottom: 32px;
+  padding: 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #E96E3A;
+  color: #ffffff;
+  cursor: pointer;
+  height: 60px;
+
+  font-family: "Inter", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+
+  transition: opacity 0.3s ease;
+}
+
+.form__button:hover {
+  opacity: 0.7;
+}
+
+
+.form__label_type_checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 0;
+}
+
+.form__checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  border: 1px solid #4F4F4F;
+  border-radius: 2px;
+  background-color: #ffffff;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.form__checkbox:checked {
+  background-color: #2A2A2A;
+  background-image: url("../images/check.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* ===================== Footer ===================== */
+.footer {
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 44px 80px 60px;
+  background-color: #D35722;
+
+  display: grid;
+  grid-template-columns: 1fr auto;
+  row-gap: 108px;
+}
+
+.footer__circle {
+  position: absolute;
+  top: -128px;
+  left: -44px;
+  width: 340px;
+  height: 340px;
+  border-radius: 50%;
+  background-color: #E96E3A;
+  z-index: 0;
+}
+
+.footer__logo {
+  z-index: 1;
+  width: 105px;
+  height: 39px;
+  align-self: start;
+}
+
+.footer__social {
+  z-index: 1;
+  justify-self: end;
+  align-self: start;
+}
+
+.footer__social-title {
+  margin: 0 0 20px;
+  color: #F2F2F2;
+  font-family: "Inter", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.footer__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer__item {
+  margin-bottom: 10px;
+}
+
+.footer__item:last-child {
+  margin-bottom: 0;
+}
+
+.footer__link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #F2F2F2;
+  text-decoration: none;
+  font-family: "Inter", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  transition: color 0.3s ease;
+}
+
+.footer__link:hover {
+  color: #FFD6C5;
+}
+
+.footer__icon {
+  width: 16px;
+  height: 16px;
+}
+
+.footer__copyright {
+  z-index: 1;
+  align-self: end;
+  margin: 0;
+  color: #F2F2F2;
+  font-family: "Inter", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+/* ===================== HOVER NAVEGACIÓN ===================== */
+.nav-link {
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #FF976B;
 }

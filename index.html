@@ -6,7 +6,7 @@
     <title>Triple Espresso</title>
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/style.css" />
-    <link rel="icon" href="/favicon.ico" />
+    <link rel="icon" href="images/favicon.ico" />
     <!-- Fuentes: Inter y Noto Serif -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,7 +24,7 @@
       />
       <nav class="nav">
         <ul class="nav-links">
-          <li><a class="nav-link" href="#content">Reservar una mesa</a></li>
+          <li><a class="nav-link" href="#reservation">Reservar una mesa</a></li>
           <li><a class="nav-link" href="#footer">Contactos</a></li>
         </ul>
       </nav>
@@ -55,7 +55,54 @@
         </p>
       </div>
     </header>
-    <main class="content" id="content"></main>
-    <footer class="footer" id="footer"></footer>
+    <main class="main">
+      <section class="reservation" id="reservation">
+       <h2 class="reservation__title">Reservar una mesa</h2>
+      <form class="form" action="/procesar-formulario" method="POST">
+        <fieldset class="form__fieldset">
+          <label class="form__label" for="name">Nombre *</label>
+          <input class="form__input" id="name" type="text" placeholder="Nombre" name="name" required />
+
+          <label class="form__label" for="guests">Número de comensales *</label>
+          <input class="form__input" id="guests" type="number" min="1" max="8" placeholder="1-8" name="guests" required />
+
+          <label class="form__label" for="datetime">Fecha y hora *</label>
+          <input class="form__input" id="datetime" type="datetime-local" name="datetime" required />
+
+          <label class="form__label" for="email">Tu correo electrónico *</label>
+          <input class="form__input" id="email" type="email" placeholder="email@email.com" name="email" required />
+
+          <button class="form__button" type="submit">Reservar una mesa</button>
+
+          <label class="form__label form__label_type_checkbox" for="terms">
+          <input class="form__checkbox" id="terms" type="checkbox" name="terms" required />
+            Acepto los términos de uso
+          </label>
+        </fieldset>
+      </form>
+      </section>
+    </main>
+    <footer class="footer" id="footer">
+      <div class="footer__circle"></div>
+      <img class="footer__logo" src="images/logo_coffeeshop_light.svg" alt="Logo de Triple Espresso" />
+      <div class="footer__social">
+        <h2 class="footer__social-title">Redes sociales</h2>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+              <img class="footer__icon" src="images/facebook_white.svg" alt="Facebook" />
+               Facebook
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+             <img class="footer__icon" src="images/instagram_white.svg" alt="Instagram" />
+              Instagram
+            </a>
+          </li>
+        </ul>
+      </div>
+      <p class="footer__copyright">© 2026 Alejandro Londoño Rojas</p>
+    </footer>
   </body>
 </html>
